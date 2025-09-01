@@ -57,16 +57,19 @@ The critical configuration that enables Python file deployment is in the `.cspro
 ## 📖 How It Works
 
 1. **Python Side** (`aot_demo.py`):
-
-def cool_things() -> list[str]: """Returns a list of cool technologies""" return ["Python", "C#", "CSnakes"]
-
+```
+def cool_things() -> list[str]: 
+"""Returns a list of cool technologies""" 
+    return ["Python", "C#", "CSnakes"]
+```
 
 2. **C# Side** (`Program.cs`):
+```
 var env = app.Services.GetRequiredService<IPythonEnvironment>(); 
 var quickDemo = env.AotDemo(); 
 var coolThings = quickDemo.CoolThings(); 
 Console.WriteLine(coolThings[0]);
-
+```
 
 ## 🛠️ Technologies Used
 
