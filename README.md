@@ -32,10 +32,10 @@ dotnet build
 3. **Run the application**
 dotnet run
 
-
 **Expected Output:**
 Python
 
+![Alt text](Results.png "Results")
 
 ## 📁 Project Structure
 CSnakes_Discovery/ ├── Program.cs          # Main C# application entry point ├── aot_demo.py         # Python module with demonstration functions ├── CSnakes_Test.csproj # Project configuration └── README.md           # This file
@@ -88,3 +88,4 @@ This project is provided as-is for educational and demonstration purposes.
 ---
 
 **Found this helpful?** ⭐ Star this repository to help others discover it!
+
